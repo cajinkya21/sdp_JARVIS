@@ -15,6 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".OneTimeHelp" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".LoginPage"></activity>
     </application>
 
 </manifest>

@@ -8,31 +8,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Main extends AppCompatActivity implements TextToSpeech.OnInitListener{
+    public class OneTimeHelp extends AppCompatActivity implements TextToSpeech.OnInitListener{
     private TextToSpeech tts;
     final Context context = this;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_activity);
+        setContentView(R.layout.activity_one_time_help);
         tts = new TextToSpeech(this, this);
-        Button buttonOne = (Button) findViewById(R.id.exitButton);
+        Button buttonOne = (Button) findViewById(R.id.nextButton);
         buttonOne.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                finish();
-                System.exit(0);
+                Intent intent = new Intent(context, SignUp.class);
+                startActivity(intent);
             }
         });
     }
     public void onInit(int status) {
-        /*
-         * Retrieve isFirstTime flag from the DB
-         * If yes, then do following.
-         * else directly go to the Login page
-         */
-        tts.speak("Welcome to the World of JARVIS", TextToSpeech.QUEUE_FLUSH, null);
-        Intent intent = new Intent(context, OneTimeHelp.class);
-        startActivity(intent);
+        tts.speak("", TextToSpeech.QUEUE_FLUSH, null);
     }
 }
