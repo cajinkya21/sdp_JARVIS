@@ -1,0 +1,1 @@
+include ':app', ':instructions', ':signup', ':signup', ':authentication', ':managediary', ':contactmanager', ':passwordmanager', ':studymanger'

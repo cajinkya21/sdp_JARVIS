@@ -1,0 +1,7 @@
+#Mon Feb 20 20:27:38 IST 2017
+base.0=/home/ajinkya/Jarvis_Design/studymanger/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d71a949c3e8fbf43f201a150a67a796887ea4452
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/ajinkya/Jarvis_Design/studymanger/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_494a91bf32027ea33a7673745b32c6cc94603190/classes.dex
+base.1=/home/ajinkya/Jarvis_Design/studymanger/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_494a91bf32027ea33a7673745b32c6cc94603190
+file.0=/home/ajinkya/Jarvis_Design/studymanger/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d71a949c3e8fbf43f201a150a67a796887ea4452/classes.dex
