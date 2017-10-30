@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BluishBlack"
+    tools:context="jarvis.jarvis.Hologram">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif1"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="130dp"
+            android:src="@drawable/ideal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif2"
+            android:layout_width="350dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="600dp"
+            android:rotation="180"
+            android:src="@drawable/ideal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif3"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginTop="200dp"
+            android:rotation="90"
+            android:src="@drawable/ideal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="189dp" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/gif4"
+            android:layout_width="350dp"
+            android:layout_height="450dp"
+            android:layout_marginLeft="350dp"
+            android:layout_marginTop="200dp"
+            android:rotation="-90"
+            android:src="@drawable/ideal"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="189dp" />
+
+        <Button
+            android:id="@+id/btnSpeaker"
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"
+            android:width="4pt"
+            android:text="SK"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

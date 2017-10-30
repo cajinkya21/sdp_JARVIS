@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="jarvis.jarvis.MegaStart"
+    tools:showIn="@layout/activity_mega_start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="517dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="30dp"
+            android:text="Welcome to Android ATA client"
+            android:textSize="15pt"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="35dp" />
+
+        <Button
+            android:id="@+id/openJarvis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="100dp"
+            android:text="JARVIS"
+            tools:layout_editor_absoluteX="256dp"
+            tools:layout_editor_absoluteY="196dp" />
+
+        <Button
+            android:id="@+id/openHologram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="100dp"
+            android:text="Hologram"
+            tools:layout_editor_absoluteX="256dp"
+            tools:layout_editor_absoluteY="461dp" />
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

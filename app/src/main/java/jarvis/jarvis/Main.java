@@ -11,28 +11,37 @@ import android.widget.Button;
 public class Main extends AppCompatActivity implements TextToSpeech.OnInitListener{
     private TextToSpeech tts;
     final Context context = this;
-
+    DatabaseHandler db;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
+        db = new DatabaseHandler(this);
         tts = new TextToSpeech(this, this);
-        Button buttonOne = (Button) findViewById(R.id.exitButton);
-        buttonOne.setOnClickListener(new Button.OnClickListener() {
-            public void onClick(View v) {
-                finish();
-                System.exit(0);
-            }
-        });
     }
     public void onInit(int status) {
-        /*
-         * Retrieve isFirstTime flag from the DB
-         * If yes, then do following.
-         * else directly go to the Login page
-         */
         tts.speak("Welcome to the World of JARVIS", TextToSpeech.QUEUE_FLUSH, null);
-        Intent intent = new Intent(context, OneTimeHelp.class);
-        startActivity(intent);
+        Thread th = new Thread(){
+            public void run(){
+                try {
+                    sleep(4000);
+                    if(db.getFlagsCount() == 0){
+                        db.addFlag(1);
+                        Intent intent = new Intent(context, HelpOfTime.class);
+                        startActivity(intent);
+                    }
+                    else{
+                        Intent intent = new Intent(context, LoginPage.class);
+                        startActivity(intent);
+                    }
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        th.start();
+    }
+    public static void closeAppNow(){
+        System.exit(0);
     }
 }

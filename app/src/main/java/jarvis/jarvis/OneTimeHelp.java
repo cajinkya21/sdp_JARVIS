@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-    public class OneTimeHelp extends AppCompatActivity implements TextToSpeech.OnInitListener{
+public class OneTimeHelp extends AppCompatActivity implements TextToSpeech.OnInitListener{
     private TextToSpeech tts;
     final Context context = this;
     @Override

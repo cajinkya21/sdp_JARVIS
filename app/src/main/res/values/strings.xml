@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">JARVIS</string>
+    <string name="title_activity_help_of_time">HelpOfTime</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_mega_start">MegaStart</string>
+    <string name="title_activity_display_data">DisplayData</string>
 </resources>

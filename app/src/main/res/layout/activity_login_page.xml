@@ -8,34 +8,49 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="jarvis.jarvis.LoginPage">
+    tools:context="jarvis.jarvis.LoginPage"
+    android:background="@drawable/pass2">
 
-    <TextView
-        android:text="Hello, Please Authenticate Yourself"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp"
-        android:id="@+id/textView2"
-        android:textSize="20sp" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
 
-    <Button
-        android:text="Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="31dp"
-        android:id="@+id/loginButton" />
+        <TextView
+            android:text="Please Authenticate Yourself"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:textSize="36sp"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberPassword"
-        android:ems="10"
-        android:layout_above="@+id/loginButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="148dp"
-        android:id="@+id/passwordTextBox" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:ems="10"
+            android:id="@+id/passwordTextBox"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
+            android:hint="day-month"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColorHint="@android:color/black"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:text="Submit"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginButton"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:background="@android:color/background_light"
+            android:layout_marginLeft="50dp" />
+    </LinearLayout>
+
 </RelativeLayout>

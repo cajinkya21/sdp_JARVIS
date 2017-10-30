@@ -8,34 +8,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="jarvis.jarvis.SignUp">
+    tools:context="jarvis.jarvis.SignUp"
+    android:background="@drawable/who">
 
-    <Button
-        android:text="That's me!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="35dp"
-        android:id="@+id/signupButton" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:text="I'm JARVIS, Who are you?"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
-        android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="20sp" />
+        <EditText
+            android:id="@+id/userNameText"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="250dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Name "
+            android:inputType="textPersonName"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/black"
+            android:textSize="24sp" />
+        <EditText
+            android:id="@+id/passNum1"
+            android:layout_width="198dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:ems="10"
+            android:gravity="center_vertical|center_horizontal"
+            android:hint="Password "
+            android:inputType="numberPassword"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="@android:color/black"
+            android:textSize="24sp" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:ems="10"
-        android:layout_above="@+id/signupButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="145dp"
-        android:id="@+id/nameText" />
+        <Button
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signupButton"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/background_light"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp" />
+    </LinearLayout>
 </RelativeLayout>
